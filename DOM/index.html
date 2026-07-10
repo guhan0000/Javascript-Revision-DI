@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .light {
+        background-color: teal;
+      }
+      .dark {
+        background-color: lightslategray;
+        height: 500px;
+      }
+      .paraStyle {
+        color: turquoise;
+        background-color: blueviolet;
+      }
+    </style>
   </head>
   <body>
+    <div style="height: 200px; width: 200px; border: 4px solid blue"></div>
+    <p class="para" id="p1">Para1</p>
+    <p class="para" id="p2">Para2</p>
+    <p class="para" id="p3"><b>Para3</b></p>
+
+    <span id="span1">This is a span tag</span>
+    <button id="btn1">click</button>
+    <h1 id="heading2" title="guhan">This is a sample H1</h1>
     <script>
       let h1 = document.createElement("h1");
       h1.textContent = "DOM Demo";
+      h1.setAttribute("id", "hh1");
       document.body.appendChild(h1);
+      console.log(h1);
     </script>
+    <script src="structure_modification.js"></script>
   </body>
 </html>
