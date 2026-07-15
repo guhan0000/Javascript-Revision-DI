@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="i1" />
+    <h1 id="h1"></h1>
+    <script>
+      //   let content = document.getElementById("i1").textContent;
+      let i1 = document.getElementById("i1");
+      let h1 = document.getElementById("h1");
+
+      i1.addEventListener("input", () => {
+        h1.innerText = i1.value;
+      });
+    </script>
+  </body>
+</html>
