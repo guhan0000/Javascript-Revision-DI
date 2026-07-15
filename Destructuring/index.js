@@ -9,6 +9,7 @@ const cars = [
   "safari",
 ];
 console.log(cars);
+// skipping elements
 const [first, second, , fourth, , , seventh] = cars;
 console.log(first);
 console.log(second);
@@ -43,7 +44,24 @@ console.log(dept);
 // rest operator
 person.skills = { HTML: 5, CSS: 3, JavaScript: 4, React: 4.5 };
 console.log(person);
-const{name:eName,...rem}=person;
+const { name: eName, ...rem } = person;
 console.log(eName);
 console.log(rem);
-
+const student = {
+  rollNo: 1,
+  studName: "Guhan",
+  address: { studCity: "chennai", studState: "TN" },
+};
+console.log(student);
+// nested destructuring
+const {
+  address: { studCity, studState },
+} = student;
+console.log(studCity);
+console.log(studState);
+// nested array
+const arr = [1, 2, [3, 4], 5];
+const [a, b, c, d] = arr;
+console.log(c); //[ 3, 4 ]
+const [a0, b0, [c0, d0], e0] = arr;
+console.log(c0); //3
